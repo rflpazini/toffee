@@ -9,5 +9,6 @@ import java.util.List;
 @Transactional
 public interface ProductService extends MongoRepository<Product, String> {
     public List<Product> findAll();
+
     public Product getProductById(String id);
 }
